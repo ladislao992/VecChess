@@ -41,7 +41,9 @@ public:
 
 	bool Step();
 private:
-	std::vector<Figure*> nabor;
+	std::vector<Figure*> FigureKit;
+	
+	
 };
 
 

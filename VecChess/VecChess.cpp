@@ -10,10 +10,10 @@
 
 int main()
 {
-	ChessField a;
+	ChessField Desk;
 
 	while (true) {
-		if (a.Step())
+		if (Desk.Step())
 			std::cout << "Success" << std::endl;
 		else {
 			std::cout << "Falce move" << std::endl;
