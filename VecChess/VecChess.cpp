@@ -11,15 +11,15 @@
 int main()
 {
 	ChessField Desk;
-
+	Desk.ShowBoard();
 	while (true) {
-		if (Desk.Step())
-			std::cout << "Success" << std::endl;
+		if (Desk.Step()) {
+			Desk.ShowBoard();
+			
+		}
 		else {
 			std::cout << "Falce move" << std::endl;
 		}
 	}
-
-	std::cout << "you lame, man";
-
 }
+	

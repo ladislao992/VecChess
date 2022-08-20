@@ -23,10 +23,8 @@ bool King::SetCurrentCoordinates(int& xPos, int& yPos)
 bool King::CanMoveToPosition(int& xPos, int& yPos)
 {
 	bool response = false;
-	int resX = 0;
-	int resY = 0;
-	resX = abs(xPos - GetX());
-	resY = abs(yPos - GetY());
+	int resX = abs(xPos - GetX());
+	int resY = abs(yPos - GetY());
 	if (resX == 1 && resY == 0 || resX == 0 && resY == 1 ||
 		resX == 1 && resY == 1)
 	{

@@ -25,6 +25,7 @@ public:
 	//int GetId();
 
 	bool Step();
+	void ShowBoard();
 private:
 	std::vector<Figure*> FigureKit;
 	
