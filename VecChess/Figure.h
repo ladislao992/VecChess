@@ -27,14 +27,14 @@ public:
 	};
 	Figure(int xPos, int yPos, Clr clr);
 	Clr GetColor()const;
-	virtual bool CanMoveToPosition(int xPos, int yPos) = 0;
+	virtual bool CanMoveToPosition(int& xPos, int& yPos) = 0;
 	int GetFigureId() const;
-	virtual bool SetCurrentCoordinates(int xPos, int yPos);
+	virtual bool SetCurrentCoordinates(int& xPos, int& yPos);
 	//virtual bool MoveToPosition(int xPos, int yPos)=0;
 
-protected:
-	int GetX();
-	int GetY();
+//protected:
+	int GetX()const;
+	int GetY()const;
 	void SetX(int x);
 	void SetY(int y);
 
@@ -45,7 +45,7 @@ private:
 
 };
 
-inline int Figure::GetX() { return m_element.xPos; }
-inline int Figure::GetY() { return m_element.yPos; }
+inline int Figure::GetX()const { return m_element.xPos; }
+inline int Figure::GetY()const { return m_element.yPos; }
 inline void Figure::SetX(int x) { m_element.xPos = x; }
 inline void Figure::SetY(int y) { m_element.yPos = y; }

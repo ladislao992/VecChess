@@ -12,23 +12,7 @@
   "Обращается к классу и принимает тру или фолс"
   ShowBoard() - выводит на экран доску с фигурами
 };"
-
-	figureId1.xPos = 1;
-	figureId1.xPos = B;
-	figureId1.color = ClrWhite;
-
-	figureId2.xPos = 1;
-	figureId2.xPos = D;
-	figureId2.color = ClrWhite;
-
-	figureId3.xPos = 8;
-	figureId3.xPos = G;
-	figureId1.color = ClrBlack;
-
-	figureId4.xPos = 8;
-	figureId4.xPos = D;
-	figureId1.color = ClrBlack;*/
-
+*/
 class ChessField
 {
 public:
@@ -36,7 +20,8 @@ public:
 	ChessField();
 	~ChessField();
 	//void SetMovePos();
-	bool Move(Figure*, int xPos, int yPos);
+	bool Move(Figure*, int& xPos, int& yPos);
+	bool CheckPos(int xPos, int yPos)const;
 	//int GetId();
 
 	bool Step();

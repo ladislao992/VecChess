@@ -17,7 +17,7 @@ int Figure::GetFigureId() const {
 
 	return m_element.id;
 }
-bool Figure::SetCurrentCoordinates(int xPos, int yPos)
+bool Figure::SetCurrentCoordinates(int& xPos, int& yPos)
 {
 	return false;
 }

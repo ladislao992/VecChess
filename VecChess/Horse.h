@@ -9,8 +9,8 @@ class Horse : public Figure
 {
 public:
 	Horse(int xPos, int yPos, Clr clr);
-	bool CanMoveToPosition(int xPos, int yPos);
-	bool SetCurrentCoordinates(int xPos, int yPos) override;
+	bool CanMoveToPosition(int& xPos, int& yPos) override;
+	bool SetCurrentCoordinates(int& xPos, int& yPos) override;
 private:
 
 };

@@ -7,7 +7,7 @@ King::King(int xPos, int yPos, Clr clr) :
 
 }
 
-bool King::SetCurrentCoordinates(int xPos, int yPos)
+bool King::SetCurrentCoordinates(int& xPos, int& yPos)
 {
 	
 		bool response = false;
@@ -20,7 +20,7 @@ bool King::SetCurrentCoordinates(int xPos, int yPos)
 		return response;
 	}
 
-bool King::CanMoveToPosition(int xPos, int yPos)
+bool King::CanMoveToPosition(int& xPos, int& yPos)
 {
 	bool response = false;
 	int resX = 0;
@@ -34,7 +34,6 @@ bool King::CanMoveToPosition(int xPos, int yPos)
 		response = true;
 
 	}
-	else
 
 		return response;
 

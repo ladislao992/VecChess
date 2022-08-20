@@ -9,7 +9,7 @@ Horse::Horse(int xPos, int yPos, Clr clr) :
 
 
 
-bool Horse::SetCurrentCoordinates(int xPos, int yPos)
+bool Horse::SetCurrentCoordinates(int& xPos, int& yPos)
 {		
 		bool response = false;
 		if (CanMoveToPosition(xPos, yPos))
@@ -21,7 +21,7 @@ bool Horse::SetCurrentCoordinates(int xPos, int yPos)
 		return response;
 	}
 
-bool Horse::CanMoveToPosition(int xPos, int yPos) {
+bool Horse::CanMoveToPosition(int& xPos, int& yPos) {
 	bool response = false;
 	int resX = 0;
 	int resY = 0;
